@@ -1,0 +1,401 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html{
+	box-sizing: border-box;
+	font size: 1em;
+}
+body{
+	background: url(../images/backround/back.png)no-repeat;
+	background-color:#78b8ae;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+/* ------------------------------------------------------------  */
+/*                        Mobil                                	*/
+/* ----------------------------------------------------------- */
+.head{
+	background: #488E83;           /* url(../images/backround/bg_footer.png) repeat center top;*/
+	position: relative;
+	height: 33%;
+	width: 100%;
+}
+.logo img{
+	
+	width: 45%;
+	height:auto;
+	padding-left:25px;
+	position:relative;
+	margin: auto;
+	text-align: center;
+}
+/* ---------------------------------------------------------- */
+/*                        Navigation                         */
+/* -------------------------------------------------------- */
+.hidden {
+ 	 display: none;
+}
+  
+#nav_ul {
+ 	 margin: 0 0 0 0;
+  	padding:0 0 0 0 ; 
+  	text-align: center;
+  	list-style: none;
+}
+
+#nav_ul a {
+ 	margin: 0;
+  	display: block;
+  	color: #fff;
+  	text-decoration: none;
+
+}
+
+#nav_ul li{
+	height: 30px;
+	background:  #000;
+	line-height: 20px;
+	letter-spacing:0.20em;
+	text-decoration: none;
+	text-align: center;
+	font-family: arial,sans-serif;
+	font-size:1em;
+	color:#fff;
+	
+}
+#nav_ul li,
+#menu{
+  	font-size: 1em;
+  	padding: 0.1em 0;
+}
+
+#menu {
+    position:absolute;
+	display: inline-block;
+	background-image: url(../images/nav/hamb.png);
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+	margin-top: 20px;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+/* ---------------------------------------------------------- */
+/*                          Slide                            */
+/* ---------------------------------------------------------*/
+#slide1{
+	position: relative;
+	width:100%;
+	height: auto;
+	margin:0;
+	padding: 0;
+	clear: both;
+	overflow: hidden;
+}
+
+.image1, .image2, .image3, .image4, .image5{
+	position: absolute;
+	display: inline;
+	max-width:100%;
+	height: 180px;
+} 
+/* ---------------------------------------------------------- */
+/*                        Titre                               */
+/* ---------------------------------------------------------- */
+.title{
+	font-family:tahoma;
+	text-align: center;
+	position: relative;
+	margin:200px auto ;
+	width: 95%;	
+}
+/*----------------------------------------------------------*/
+/*                  Navigation lieux                        */
+/*----------------------------------------------------------*/
+
+.btn-menu-main{display: inline-block; vertical-align: top;
+}
+.btn-menu-main:nth-child(n+6){margin: 0 0 0 0px;
+}
+.btn-menu-main2{ display: inline-block; vertical-align: top;
+}
+.btn-menu-main2:nth-child(n+6){margin: 0 0 0 0px;
+}
+.content{
+	text-align: center;
+	margin: -150px auto;
+	width: 100%;
+	height:auto;	
+}
+.content img{ width:90px; height:auto;}
+/*----------------------------------------------------------*/
+/*                     Navigation events                    */
+/*----------------------------------------------------------*/
+	#navevent{
+	clear: both;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin-top: 150px;
+}
+
+	#navevent ul{
+	margin: 0 0 0 0;
+	padding: 40px 0 0 0;
+	text-align: center;
+}
+
+	#navevent ul li{
+	display: inline-block;
+	list-style: none;	
+}
+
+	#navevent li a{
+	display: block;
+	text-align: center;
+	padding: 0 0 0 0;
+	margin: 0 auto;
+	font-family: arial,sans-serif;
+	font-size: 1em;
+	letter-spacing:0.20em;
+	color: #000;
+	text-decoration: none;
+	border-right: 1px solid #333;
+}
+
+	#navevent li a.last{
+	border: none;
+}
+
+	#navevent li a:hover{
+	color:#ff0000;
+}
+
+	#img_cont{
+	position: relative;
+	padding-top: 0px
+}
+
+	.img_tab img{
+	padding: 10px auto;
+	padding-top: 30px;
+	float: left;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	/*border: 08px solid #78b8ae ;*/
+}
+/*----------------------------------------------------------*/
+/*                       Reseaux sociaux                    */
+/*----------------------------------------------------------*/
+	.social img{
+	width: 10%;
+	height: auto;
+}
+	.social {
+	
+	margin: 20px auto;
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+}
+.icone{
+	width: 100%;
+	height: auto;
+	padding: 0 0 0 50px
+}
+/*----------------------------------------------------------*/
+/*                         Footer                           */
+/*----------------------------------------------------------*/
+
+	.footer{
+	position: relative;
+	background: #5c958c;/*url(../images/backround/bg_footer.png) repeat center top;*/
+	margin: 0px auto;
+	width: 100%;
+	height: 100px;
+}
+/*----------------------------------------------------------*/
+/*                        Tablette min 640px                */
+/*----------------------------------------------------------*/
+@media screen and (min-width: 640px) {
+	body{
+	/*background: url(../images/backround/back.png)no-repeat;*/
+	background-color:red;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+/*.head{
+	background:url(../images/backround/bg_footer.png) repeat center top;
+	position: relative;
+	height: 100px;
+	width: 100%;
+}
+.logo img{
+	width: 150px;
+	height:auto;
+	padding-left:25px;
+	position:relative;
+}*/
+/*----------------------------------------------------------*/
+/*                        Navigation                        */
+/*----------------------------------------------------------*/
+/*.hidden {
+  	display: none;
+}
+  
+#nav_ul {
+  	margin: 0 0 0 0;
+  	padding:0 0 0 0 ; 
+  	text-align: center;
+  	list-style: none;
+}
+
+#nav_ul a {
+  	margin: 0;
+  	display: block;
+  	color: #fff;
+  	text-decoration: none;
+
+}
+
+#nav_ul li{
+	height: 30px;
+	background:  #000;
+	line-height: 20px;
+	letter-spacing:0.20em;
+	text-decoration: none;
+	text-align: center;
+	font-family: arial,sans-serif;
+	font-size:1em;
+	color:#fff;
+	
+}
+
+#nav_ul li:hover{
+	background-color: #333;
+	color:  #76b6ac;
+}
+  
+#nav_ul li,
+#menu{
+  	font-size: 1em;
+  	padding: 0.1em 0;
+}
+
+#menu {
+    position:absolute;
+	display: inline-block;
+	background-image: url(../images/nav/hamb.png);
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+	margin-top: 20px;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}*/
+/*----------------------------------------------------------*/
+/*                        Slide                              */
+/*----------------------------------------------------------*/
+
+/*#slide1{
+	background-color: #000;
+	position: relative;
+	width:100%;
+	height: auto;
+	margin:0;
+	padding: 0;
+	clear: both;
+	overflow: hidden;
+	border:1px solid #333;
+}
+
+.image1, .image2, .image3, .image4, .image5{
+	position: absolute;
+	display: inline;
+	max-width:100%;
+	height: auto;
+} */
+/*----------------------------------------------------------*/
+/*                        Titre                             */
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+/*                        Navigation lieux                  */
+/*----------------------------------------------------------*/
+/*
+}
+.btn-menu-main{ display: inline-block; vertical-align: top;
+}
+.btn-menu-main:nth-child(n+6){margin: 0 0 0 0px;
+}
+.btn-menu-main2{ display: inline-block; vertical-align: top;
+}
+.btn-menu-main2:nth-child(n+6){margin: 0 0 0 0px;
+}*/
+/*.content{
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 100%;
+	height:100%;	
+}
+.content img{ width:100px; height:auto;}*/
+
+  
+
+/*----------------------------------------------------------*/
+/*             Navigation events                            */
+/*----------------------------------------------------------*/
+
+
+/*----------------------------------------------------------*/
+/*                       Reseaux sociaux                    */
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+/*                       Footer                             */
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+}
+
+@media screen and (min-width: 1024px) {
+
+/*----------------------------------------------------------*/
+/*                        navigation                        */
+/*----------------------------------------------------------*/
+
+
+/*----------------------------------------------------------*/
+/*                        Slide                             */
+/*----------------------------------------------------------*/
+
+
+/*----------------------------------------------------------*/
+/*                        navigation lieux                  */
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+/*             Navigation events                            */
+/*----------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------*/
+/*             Reseaux sociaux                              */
+/*----------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------*/
+/*                           Footer                         */
+/*----------------------------------------------------------*/
+
+}
