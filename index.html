@@ -8,37 +8,85 @@
 	   	 	<link rel="stylesheet" type="text/css" href="css/stile.css">
 	</head> 
 	<body>
+				<!--==========================================================================-->
+				<!--                                  Header                                  -->
+				<!--==========================================================================-->
+
 		<div class="container">
 			<div class="head">
 				<div class="logo"> 
 					<a href=""><img src="images/logo/2015.png" alt="logo" width="200" height="150"/></a>
 				</div>
 			</div>
-		<div id = "nav">
-			<div id="menu" ></div>
-				<ul id = "nav_ul" class="hidden">
-				    <a href='index.html'><li>Accueil</li></a>
-				    <a href='#'><li>Lieux</li></a>
-				    <a href='#'><li>Events</li></a>
-				    <a href='#'><li>Contact</li></a>
+
+			<div id = "nav">
+					<div id="menu" ></div>
+					<ul id = "nav_ul" class="hidden">
+				   		<a href='index.html'><li>Accueil</li></a>
+				    	<a href='#'><li>Lieux</li></a>
+				    	<a href='#'><li>Events</li></a>
+				    	<a href='#'><li>Contact</li></a>
+					</ul>
+			</div> 
+		</div>
+
+				<!--========================================================================-->
+				<!--                                  Slyde                                 -->
+				<!--========================================================================-->
+
+
+		<section id="slider" class="container">
+				<ul class="slider-wrapper">
+					<li class="current-slide">
+						<img class="image1" src="images/slyde/1.jpg"alt="BAM"width="1000" height="220"/>
+					<div class="caption">
+						<h2 class="slider-title">Bam</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, placeat est. Alias illo hic quo nobis, aspernatur iste ut voluptate.</p>
+					</div>
+					</li>
+					<li>
+						<img class="image1" src="images/slyde/2.jpg"alt="BAM"width="1000" height="220"/>
+						<div class="caption">
+							<h2 class="slider-title">Diseño Responsive</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto placeat aliquid tempore harum, similique!</p>
+						</div>
+					</li>
+
+					<li>
+						<img class="image1" src="images/slyde/3.jpg"alt="BAM"width="1000" height="220"/>
+						<div class="caption">
+							<h2 class="slider-title">Identidad Corporativa</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dicta laudantium voluptatem minima! Dolorum tempore dolores excepturi omnis provident. Commodi quis aperiam maiores, dolore a perferendis!</p>
+						</div>
+					</li>
+
+					<li>
+						<img class="image1" src="images/slyde/4.jpg"alt="BAM"width="1000" height="220"/>
+						<div class="caption">
+							<h2 class="slider-title">Desarrollo Web</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dignissimos laudantium.</p>
+						</div>
+					</li>
 				</ul>
-		</div> 
+				<!-- Ombre -->
+				<div class="slider-shadow"></div>
+		
+				<!-- Controle nav -->
+				<ul id="control-buttons" class="control-buttons"></ul>
+		</section>
 
-		<div id="slide">
-				
 
-				<img class="image1" src="images/slyde/1.jpg"alt="BAM"width="1000" height="220"/>
-
-				<img class="image2" src="images/slyde/2.jpg" alt="GARE" width="1000" height="220"/>
-
-				<img class="image3" src="images/slyde/3.jpg" alt="FOLIE" width="1000" height="220"/>
-		</div>	
+				<!--==========================================================================-->
+				<!--                                 Tittle                                   -->
+				<!--==========================================================================-->
 		<div class="title">
 			<div ="texte">
 				<p><h1>Mons 2015,</h1><h3>c’est aussi un projet d’architecture contemporaine!</h3></p>
 			</div>
 		</div>
-
+				<!--==========================================================================-->
+				<!--                                 Nav.Lieux                                -->
+				<!--==========================================================================-->
 
 		<div class="content">
 			<div>
@@ -65,14 +113,9 @@
 				<div class="btn-menu-main2" id="fondation"><a href="#"><img src="images/logo/fondation.png" alt="" width="300" height="300"></a></div> 
 			</div>
 		</div>
-
-		<!-- <div class="title">
-			<div ="texte">
-				<p><h1>Mons 2015,</h1><h3>c’est aussi un projet d’architecture contemporaine!</h3></p>
-			</div>
-		</div> -->
-
-
+				<!--==========================================================================-->
+				<!--                                  Nav.Events                              -->
+				<!--==========================================================================-->
 
 
 		<div id="navevent">
@@ -106,7 +149,9 @@
 			</div>
 		</div>
 
-
+				<!--==========================================================================-->
+				<!--                                   Reseaux sociaux                        -->
+				<!--==========================================================================-->
 		</div>
 			<div class="social">
 				<div class="icone">
@@ -119,9 +164,15 @@
 				<a href="http://instagram.com/mons2015"><img src="images/reseaux/instagram.png" alt="instagram"></a>
 			</div>
 		</div>
-			
+				<!--==========================================================================-->
+				<!--                                   Footer                                 -->
+				<!--==========================================================================-->
 
-		<footer class="footer"></footer>					
+		<footer class="footer"></footer>
+
+				<!--==========================================================================-->
+				<!--                                  Script                                  -->
+				<!--==========================================================================-->					
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="js/index.js" type="text/javascript"></script>

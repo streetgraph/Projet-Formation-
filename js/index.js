@@ -1,6 +1,8 @@
 (function($){
 
-    /*----- navbar-----*/
+     /* --------------------------------------------------------- */
+    /*                          Menu                             */
+   /* ----------------------------------------------------------*/
 
 function respMenu () {
   var menu = $('#menu');
@@ -23,32 +25,101 @@ function respMenu () {
   
 respMenu();
 
-    /*-----fin navbar-----*/
-                                          
-    
-    /*----- slider-----*/
-$(function() {
-
-    var i=0;
-    diapo();
-
-    function diapo() {
-        
-      i++;
-      if (i==1) {photo = '.image4'
-           }else {photo = '.image' + (i-1)};
-      var image = '.image' + i;
-      $(photo).fadeOut(2000);
-      $(image).fadeIn(2000);
-      if (i==3) i=0;          
+     /* --------------------------------------------------------- */
+    /*                          Slyde                            */
+   /* ----------------------------------------------------------*/
+  
+   var SliderModule = (function() {
+    var pb = {};
+    pb.el = $('#slider');
+    pb.items = {
+      panels: pb.el.find('.slider-wrapper > li'),
     }
 
-    setInterval(diapo,2000);
-  }); 
+    // Interval  Slider
+    var SliderInterval,
+      currentSlider = 0,
+      nextSlider = 1,
+      lengthSlider = pb.items.panels.length;
 
-    /*-----fin slider-----*/
+    // Constructor Slider
+    pb.init = function(settings) {
+      this.settings = settings || {duration: 8000};
+      var items = this.items,
+        lengthPanels = items.panels.length,
+        output = '';
 
-    /* nav_event*/
+      // boutton
+      for(var i = 0; i < lengthPanels; i++) {
+        if(i == 0) {
+          output += '<li class="active"></li>';
+        } else {
+          output += '<li></li>';
+        }
+      }
+
+      $('#control-buttons').html(output);
+      // Activamos nuestro Slider
+      activateSlider();
+      // Eventos para los controles
+      $('#control-buttons').on('click', 'li', function(e) {
+        var $this = $(this);
+        if(!(currentSlider === $this.index())) {
+          changePanel($this.index());
+        }
+      });
+
+    }
+    // Funcion para activar el Slider
+    var activateSlider = function() {
+      SliderInterval = setInterval(pb.startSlider, pb.settings.duration);
+    }
+
+    // Funcion para la Animacion
+    pb.startSlider = function() {
+      var items = pb.items,
+        controls = $('#control-buttons li');
+      // Comprobamos si es el ultimo panel para reiniciar el conteo
+      if(nextSlider >= lengthSlider) {
+        nextSlider = 0;
+        currentSlider = lengthSlider-1;
+      }
+
+      controls.removeClass('active').eq(nextSlider).addClass('active');
+      items.panels.eq(currentSlider).fadeOut('slow');
+      items.panels.eq(nextSlider).fadeIn('slow');
+      // Actualizamos los datos del slider
+      currentSlider = nextSlider;
+      nextSlider += 1;
+    }
+    // Funcion para Cambiar de Panel con Los Controles
+    var changePanel = function(id) {
+      clearInterval(SliderInterval);
+      var items = pb.items,
+        controls = $('#control-buttons li');
+      // Comprobamos si el ID esta disponible entre los paneles
+      if(id >= lengthSlider) {
+        id = 0;
+      } else if(id < 0) {
+        id = lengthSlider-1;
+      }
+      controls.removeClass('active').eq(id).addClass('active');
+      items.panels.eq(currentSlider).fadeOut('slow');
+      items.panels.eq(id).fadeIn('slow');
+      // Volvemos a actualizar los datos del slider
+      currentSlider = id;
+      nextSlider = id+1;
+      // Reactivamos nuestro slider
+      activateSlider();
+    }
+    return pb;
+   }());
+
+   SliderModule.init({duration: 2000});
+
+     /* --------------------------------------------------------- */
+    /*                         Nav Events                        */
+   /* ----------------------------------------------------------*/
 
     $('div#img_cont div:gt(0)').css('display','none');
     $('#navevent li a').click(function(event){
@@ -58,7 +129,6 @@ $(function() {
     $(id_tab).show('slide',250);
   });
 
-    /*fin nav_event*/
-
-  
+   
+ 
 })(jQuery);
