@@ -9,10 +9,10 @@ function respMenu () {
   var nav = $('#nav_ul');
   
   $(window).resize(function(){
-    if(window.innerWidth > 768) {
+    if(window.innerWidth >780) {
        nav.removeClass('hidden');
        menu.addClass('hidden');
-       // nav.removeAttr('style');
+       nav.removeAttr('style');
     } else { 
       menu.removeClass('hidden');
       nav.addClass('hidden');

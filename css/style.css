@@ -329,55 +329,6 @@ margin: auto; #68a097;background-color: #000;*/
 }
 
 }
-/* .partenaire {
-	color:#FFF; 
-	width: 60%;
-	float: left;
-	text-align: left;
-}
-.partenaire h2{
-	font-size: 10px; 
-	margin: 0 0 0 -50px;
-}
-.partenaire  li{
-	list-style: none;
-}
-.media{
-	float: left;
-	position: relative; 
-	width: 40%;
-}
-.media h2{
-	font-size: 10px;
-	color:#FFF;
-	margin: 0 0 0 -22px;
-}
-.media ul li{
-	
-	list-style: none;
-
-}
-.media img {
-	margin: 7px auto;
-	padding: 0 11px 0 0;
-	display: inline-block;
-	width: 50%;
-	float: left;
-}
-.institutions p{
-	text-align: center;
-	color:#FFF; 	
-	width: 100%;
-	display: inline-block;
-}
-.institutions ul li{
-	display: inline-block;
-	list-style: none;
-*/
-
-
-
-
 /*******************Tablet****************/
 @media screen and (min-width: 768px) {
 	.content{
@@ -491,10 +442,6 @@ h1{
 	padding-left: 7px;	
 }
 
-/* .batiment1 img:hover{
-	width: 90%;
-	height: auto;
-} */
 
 .batiment2{
 	margin: 0;
@@ -641,60 +588,12 @@ h1{
 
 /*******************desktop****************/
 @media screen and (min-width: 960px) {
-/* 	.head{
-background-color: #68a097;
+ 	.head{
+background-color:#E71313;
 position: relative;
 height: 100px;
 width: 100%;
  }
-	#navevent{
-	
-} 
- 
-   .img_tab img{
-	display: none;
-} 
-
-   .container{
-	width: 100%;
-	margin: auto;
-	padding: 0;
-	overflow: hidden; 
-	height: 100%;
-} 
-
- 	#slide img{
-	display: inline-block;
-	background-color: #000;
-	position: relative;
-	width: 500px;
-	height: 300px;
-	margin:auto;
-	padding: 0;
-	clear: both;
-	
-	
-}
-
-.image1, .image2, .image3, .image4, .image5{
-	position: absolute;
-	width: 100%;
-	height:auto;
-	overflow: hidden;	
-}
-
- 	h1{
-	position: absolute;
-	display:inline-block;
-	max-width: 1024px;
-    line-height: 20px;
-	font-size:1.4em;
-	color:#000;
-	top: 495px;
-}*/
-
-
-
  	
 
 }
