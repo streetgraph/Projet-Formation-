@@ -667,14 +667,28 @@ body{
 /*----------------------------------------------------------*/
 /*                        navigation lieux                  */
 /*----------------------------------------------------------*/
-.content{
-	margin: 0 auto;
+.content{background: red;
+	margin:0px 0 0 0  ;
 	position: relative;s
 	background: blue;
-	width: 100%;
+	width: 60%;
+	height: 255px;
 }
 .content img{ width:80px; height:auto;}
-
+#folie{margin: 220px 0 0 40px; float: left;}
+#manege{clear: both; float: left;}
+#depot{float: left; }
+#abatoire{float: left;}
+#arsonic{clear:both;float: left; margin:0 0 0 40px;}
+/* 
+.btn-menu-main{display: inline-block; vertical-align: top;
+}
+.btn-menu-main:nth-child(2n+6){margin: 0 0 0 36px;
+}
+.btn-menu-main2{ display: inline-block; vertical-align: top;
+}
+.btn-menu-main2:nth-child(n+6){margin: 0 0 0 0px;
+} */
 
 /*----------------------------------------------------------*/
 /*             Navigation events                            */
